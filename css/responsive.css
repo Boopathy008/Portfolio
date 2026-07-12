@@ -1,0 +1,41 @@
+/* =============================================================
+   RESPONSIVE LAYER
+   ============================================================= */
+
+@media (max-width: 1199.98px){
+  :root{ --section-pad: 6rem; }
+  .code-float-card{ left: -4%; width: 220px; }
+}
+
+@media (max-width: 991.98px){
+  :root{ --section-pad: 5rem; }
+  .hero{ text-align: center; padding-top: 8rem; }
+  .hero-socials{ justify-content: center; }
+  .hero-actions{ justify-content: center; }
+  .hero-intro{ margin-left: auto; margin-right: auto; }
+  .avatar-wrap{ margin-top: 3rem; }
+  .about-photo-col{ margin-bottom: 3rem; }
+  .experience-banner{ justify-content: center; text-align: left; }
+}
+
+@media (max-width: 767.98px){
+  .section{ padding: var(--section-pad) 0; }
+  .section-subtitle{ margin-bottom: 2.2rem; }
+  .edu-card{ flex-direction: column; text-align: center; }
+  .edu-icon{ margin: 0 auto; }
+  .edu-meta{ justify-content: center; }
+  .profile-card{ flex-wrap: wrap; text-align: center; justify-content: center; }
+  .profile-arrow{ display: none; }
+  .contact-card{ padding: 1.6rem; }
+  .experience-banner{ padding: 1.6rem; }
+  .avatar-initials{ font-size: 3.2rem; }
+}
+
+@media (max-width: 575.98px){
+  .hero-name{ font-size: 2.1rem; }
+  .hero-actions{ flex-direction: column; width: 100%; }
+  .hero-actions .btn-glow, .hero-actions .btn-outline-glow{ width: 100%; justify-content: center; }
+  .tools-grid{ grid-template-columns: repeat(2, 1fr); }
+  #back-to-top{ width: 42px; height: 42px; bottom: 18px; right: 18px; }
+  .project-actions{ flex-direction: column; }
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahendra Boopathy | Java Full Stack Developer</title>
+  <meta name="description" content="Mahendra Boopathy — Java Full Stack Developer specializing in Spring Boot, REST APIs, MySQL, and AI-powered backend applications. Open to full-time opportunities.">
+  <meta name="keywords" content="Mahendra Boopathy, Java Full Stack Developer, Spring Boot Developer, Backend Developer, REST API, Spring AI, Portfolio">
+  <meta name="author" content="Mahendra Boopathy">
+  <meta property="og:title" content="Mahendra Boopathy | Java Full Stack Developer">
+  <meta property="og:description" content="Java Full Stack Developer building scalable backend applications with Java, Spring Boot, MySQL, REST APIs and AI-powered technologies.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230F172A%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%2244%22 fill=%22%2306B6D4%22 text-anchor=%22middle%22 font-family=%22monospace%22>M</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ===================== Preloader ===================== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-console">
+      <span>~/mahendra $ initializing portfolio</span>
+      <span class="dots"><span>.</span><span>.</span><span>.</span></span>
+      <span class="cursor"></span>
+    </div>
+  </div>
+
+  <!-- ===================== Scroll Progress ===================== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===================== Navbar ===================== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-prompt">&lt;</span>Mahendra Boopathy<span class="brand-dot">/&gt;</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#coding-profiles">Coding Profiles</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== Hero / Home ===================== -->
+  <header class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="blob blob-1 parallax-layer"></div>
+      <div class="blob blob-2 parallax-layer"></div>
+    </div>
+    <div class="container-xl section-inner">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="hero-eyebrow mono"></div>
+          <h1 class="hero-name">Hi, I'm <span class="text-gradient">Mahendra Boopathy</span></h1>
+          <div class="hero-typed-wrap">
+            <span class="mono">&gt;</span> <span id="typed-role"></span>
+          </div>
+          <p class="hero-intro">
+            Hi, I'm Mahendra Boopathy, a passionate Java Full Stack Developer who enjoys building
+            scalable backend applications using Java, Spring Boot, MySQL, REST APIs, and AI-powered
+            technologies while creating responsive user interfaces.
+          </p>
+          <div class="hero-actions">
+            <a href="Mahendra_Boopathy (1).pdf" download class="btn-glow">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#projects" class="btn-outline-glow">
+              <i class="fa-solid fa-diagram-project"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-outline-glow">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Boopathy008" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mahendra-boopathy-e/" target="_blank" rel="noopener" class="social-pill" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:boopathy.936057@gmail.com" class="social-pill" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="avatar-wrap">
+            <div class="avatar-ring">
+                <div class="avatar-inner">
+                    <img src="images/Boopathy.png" alt="Mahendra Boopathy" class="profile-image">
+                </div>
+            </div>
+            <div class="avatar-badge">
+              <span class="dot"></span> Open to Work
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== About ===================== -->
+  <section class="section" id="about">
+  <div class="container-xl section-inner">
+
+    <div class="row gy-5 align-items-start">
+
+      <!-- Left Side: Profile Image and Stats -->
+      <div class="col-lg-5 about-photo-col" data-aos="fade-right">
+
+        <div class="about-photo-frame">
+
+          <div class="about-image-wrapper">
+            <img
+              src="images/Boopathy.png"
+              alt="Mahendra Boopathy"
+              class="about-profile-image"
+            >
+          </div>
+
+          <div class="about-stats">
+
+            <div>
+              <span class="stat-num">4+</span>
+              <span class="stat-label">PROJECTS</span>
+            </div>
+
+            <div>
+              <span class="stat-num">7.81</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+
+            <div>
+              <span class="stat-num">2026</span>
+              <span class="stat-label">GRAD YEAR</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side: About Content -->
+      <div class="col-lg-7" data-aos="fade-left">
+
+        
+
+        <h2 class="section-title">
+          About <span class="text-gradient">Me</span>
+        </h2>
+
+        <p class="section-subtitle">
+          I am a Java Full Stack Developer focused on building secure,
+          scalable and user-friendly web applications using Java,
+          Spring Boot, MySQL and modern front-end technologies.
+        </p>
+
+        <div class="about-timeline">
+
+          <div class="timeline-item" data-aos="fade-up">
+            <span class="timeline-year">2022 — 2023</span>
+
+            <h4>Started My Computer Science Journey</h4>
+
+            <p>
+              Began learning programming fundamentals, Java, problem-solving
+              techniques and core computer science concepts.
+            </p>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="timeline-year">2023 — 2024</span>
+
+            <h4>Built Full Stack Fundamentals</h4>
+
+            <p>
+              Learned object-oriented programming, SQL, MySQL, HTML, CSS and
+              JavaScript, and started building responsive web applications.
+            </p>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="timeline-year">2024 — 2025</span>
+
+            <h4>Specialized in Java and Spring Boot</h4>
+
+            <p>
+              Developed backend applications using Spring Boot, Spring MVC,
+              REST APIs, JPA, Hibernate, Spring Security and MySQL.
+            </p>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <span class="timeline-year">2025 — 2026</span>
+
+            <h4>Building AI-Integrated Applications</h4>
+
+            <p>
+              Currently developing full stack applications using Spring AI
+              and AI-powered features while preparing for a Java Full Stack
+              Developer role.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="about-tags">
+          <span class="about-tag">Java</span>
+          <span class="about-tag">Spring Boot</span>
+          <span class="about-tag">Spring MVC</span>
+          <span class="about-tag">REST APIs</span>
+          <span class="about-tag">MySQL</span>
+          <span class="about-tag">JPA</span>
+          <span class="about-tag">Hibernate</span>
+          <span class="about-tag">Spring Security</span>
+          <span class="about-tag">Spring AI</span>
+          <span class="about-tag">HTML</span>
+          <span class="about-tag">CSS</span>
+          <span class="about-tag">JavaScript</span>
+          <span class="about-tag">Git</span>
+          <span class="about-tag">Problem Solving</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===================== Skills ===================== -->
+  <section class="section" id="skills" style="background: var(--bg-soft);">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+        
+        <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+        <p class="section-subtitle mx-auto">The languages, frameworks, and tools I use to design,
+          build, and ship full stack applications.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4" data-aos="fade-up">
+          <div class="card-surface skill-card">
+            <div class="skill-group-title"><i class="fa-solid fa-code"></i> Languages</div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Java</span><span class="pct">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>JavaScript</span><span class="pct">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>SQL</span><span class="pct">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>HTML</span><span class="pct">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>CSS</span><span class="pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-surface skill-card">
+            <div class="skill-group-title"><i class="fa-solid fa-server"></i> Backend</div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Spring Boot</span><span class="pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Spring MVC</span><span class="pct">80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Spring Security</span><span class="pct">72%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>REST API</span><span class="pct">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Spring AI</span><span class="pct">70%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-surface skill-card">
+            <div class="skill-group-title"><i class="fa-solid fa-database"></i> Database &amp; Frontend</div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>MySQL</span><span class="pct">82%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>Bootstrap</span><span class="pct">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>HTML / CSS</span><span class="pct">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-head"><span>JavaScript (DOM)</span><span class="pct">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5" data-aos="fade-up">
+        <div class="skill-group-title justify-content-center"><i class="fa-solid fa-toolbox"></i> Tools I Use Daily</div>
+        <div class="tools-grid">
+          <div class="tool-chip card-surface"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          <div class="tool-chip card-surface"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="tool-chip card-surface"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+          <div class="tool-chip card-surface"><i class="fa-solid fa-feather-pointed"></i><span>IntelliJ IDEA</span></div>
+          <div class="tool-chip card-surface"><i class="fa-solid fa-paper-plane"></i><span>Postman</span></div>
+          <div class="tool-chip card-surface"><i class="fa-brands fa-java"></i><span>Maven</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Projects ===================== -->
+  <section class="section" id="projects">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle mx-auto">A selection of full stack and backend-focused
+          builds that reflect how I approach real-world problems.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card-surface project-card">
+            <div class="project-banner">
+              <img src="images/AI Interview Pre.png" alt="AI Interview Preparation System" class="project-image"></div>
+            <div class="project-body">
+              <h4>AI Interview Preparation System</h4>
+              <p class="desc">An AI-powered interview preparation platform built using Spring AI
+                that generates interview questions, study plans, coding challenges, and
+                personalized responses.</p>
+              <div class="project-stack">
+                <span class="stack-chip">Java</span>
+                <span class="stack-chip">Spring Boot</span>
+                <span class="stack-chip">Spring AI</span>
+                <span class="stack-chip">MySQL</span>
+                <span class="stack-chip">HTML</span>
+                <span class="stack-chip">CSS</span>
+                <span class="stack-chip">JavaScript</span>
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> AI Study Plan Generator</li>
+                <li><i class="fa-solid fa-check"></i> Authentication</li>
+                <li><i class="fa-solid fa-check"></i> Personalized Dashboard</li>
+                <li><i class="fa-solid fa-check"></i> REST APIs</li>
+                <li><i class="fa-solid fa-check"></i> Question Generator</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/Boopathy008/ai-interview-prep" class="pa-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://ai-interview-prep-38xp.onrender.com" class="pa-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card-surface project-card">
+            <div class="project-banner"><img src="images/Job Portal.png" alt="Job Portal" class="project-image"></div>
+            <div class="project-body">
+              <h4>Job Portal</h4>
+              <p class="desc">A full stack job portal connecting candidates and employers, with
+                dedicated dashboards for job search, applications, and hiring management.</p>
+              <div class="project-stack">
+                <span class="stack-chip">Java</span>
+                <span class="stack-chip">Spring Boot</span>
+                <span class="stack-chip">MySQL</span>
+                <span class="stack-chip">HTML</span>
+                <span class="stack-chip">CSS</span>
+                <span class="stack-chip">JavaScript</span>
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Job Search</li>
+                <li><i class="fa-solid fa-check"></i> Resume Upload</li>
+                <li><i class="fa-solid fa-check"></i> Employer Dashboard</li>
+                <li><i class="fa-solid fa-check"></i> Candidate Dashboard</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/Boopathy008/Online-Job-Portal" class="pa-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://online-job-portal-kappa-eight.vercel.app/" class="pa-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-surface project-card">
+            <div class="project-banner pb-2"><i class="fa-solid fa-building-user"></i></div>
+            <div class="project-body">
+              <h4>NexusHR</h4>
+              <p class="desc">A Human Resource Management System built to streamline employee
+                records, attendance, leave, and payroll processing for organizations.</p>
+              <div class="project-stack">
+                <span class="stack-chip">Spring Boot</span>
+                <span class="stack-chip">MySQL</span>
+                <span class="stack-chip">HTML</span>
+                <span class="stack-chip">CSS</span>
+                <span class="stack-chip">JavaScript</span>
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Attendance Tracking</li>
+                <li><i class="fa-solid fa-check"></i> Payroll Management</li>
+                <li><i class="fa-solid fa-check"></i> Leave Management</li>
+                <li><i class="fa-solid fa-check"></i> Employee Management</li>
+                <li><i class="fa-solid fa-check"></i> Authentication</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://github.com/Boopathy008/nexushr" class="pa-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://nexushr-flax.vercel.app/login" class="pa-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 3 -->
+
+        <!-- Project 4 
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-surface project-card">
+            <div class="project-banner pb-4"><i class="fa-solid fa-utensils"></i></div>
+            <div class="project-body">
+              <h4>Restaurant Website</h4>
+              <p class="desc">A fully responsive restaurant website showcasing menus, ambience,
+                and location details with a clean, modern interface.</p>
+              <div class="project-stack">
+                <span class="stack-chip">HTML</span>
+                <span class="stack-chip">CSS</span>
+                <span class="stack-chip">JavaScript</span>
+              </div>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Responsive Layout</li>
+                <li><i class="fa-solid fa-check"></i> Menu Showcase</li>
+                <li><i class="fa-solid fa-check"></i> Contact &amp; Location Section</li>
+              </ul>
+              <div class="project-actions">
+                <a href="#" class="pa-github"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" class="pa-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Education (+ Experience) ===================== -->
+  <section class="section" id="education" style="background: var(--bg-soft);">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+        
+        <h2 class="section-title">Education &amp; <span class="text-gradient">Experience</span></h2>
+        <p class="section-subtitle mx-auto">Academic background and current career status.</p>
+      </div>
+
+      <div class="experience-banner" data-aos="fade-up">
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h5>Fresher</h5>
+            <span>Starting my professional journey</span>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-door-open"></i></div>
+          <div>
+            <h5>Open to Full-Time Opportunities</h5>
+            <span>Available to join immediately after graduation</span>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-icon"><i class="fa-solid fa-crosshairs"></i></div>
+          <div>
+            <h5>Seeking Java Full Stack Developer Role</h5>
+            <span>Focused on backend-heavy full stack positions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto" data-aos="fade-up">
+          <div class="card-surface edu-card">
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h4>B.Sc Computer Science</h4>
+              <p class="mb-0" style="font-size:0.92rem;">Focused on core computer science
+                fundamentals, programming, and applied software development.</p>
+              <div class="edu-meta">
+                <div><span>CGPA</span>7.81</div>
+                <div><span>Graduation</span>2026</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Certificates ===================== -->
+  <section class="section" id="certificates">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+        
+        <h2 class="section-title">Certificates &amp; <span class="text-gradient">Training</span></h2>
+        <p class="section-subtitle mx-auto">Courses and hands-on training completed to
+          strengthen my full stack development skill set.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3" data-aos="fade-up">
+          <div class="card-surface cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+            <h5>Java Programming</h5>
+            <span>Core &amp; Advanced Java</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-surface cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-leaf"></i></div>
+            <h5>Spring Boot</h5>
+            <span>Backend Development</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-surface cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+            <h5>MySQL</h5>
+            <span>Database Management</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-surface cert-card">
+            <div class="cert-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <h5>Git &amp; GitHub</h5>
+            <span>Version Control</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Coding Profiles ===================== -->
+  <section class="section" id="coding-profiles" style="background: var(--bg-soft);">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+        
+        <h2 class="section-title">Coding <span class="text-gradient">Profiles</span></h2>
+        <p class="section-subtitle mx-auto">Where I practice problem solving and share my code.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <a href="https://github.com/Boopathy008" target="_blank" rel="noopener" class="card-surface profile-card">
+            <div class="profile-icon gh"><i class="fa-brands fa-github"></i></div>
+            <div class="profile-info">
+              <h5>GitHub</h5>
+              <span>Boopathy008</span>
+            </div>
+            <i class="fa-solid fa-arrow-right profile-arrow"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://leetcode.com/u/Mahendra_Boopathy_08/" target="_blank" rel="noopener" class="card-surface profile-card">
+            <div class="profile-icon lc"><i class="fa-solid fa-code"></i></div>
+            <div class="profile-info">
+              <h5>LeetCode</h5>
+              <span>Mahendra_Boopathy_08</span>
+            </div>
+            <i class="fa-solid fa-arrow-right profile-arrow"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="#" class="card-surface profile-card">
+            <div class="profile-icon cc"><i class="fa-solid fa-code-compare"></i></div>
+            <div class="profile-info">
+              <h5>CodeChef</h5>
+              <span>Add profile link</span>
+            </div>
+            <i class="fa-solid fa-arrow-right profile-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section class="section" id="contact">
+    <div class="container-xl section-inner">
+      <div class="text-center mx-auto" data-aos="fade-up" style="max-width:640px;">
+        
+        <h2 class="section-title">Let's Build Something <span class="text-gradient">Together</span></h2>
+        <p class="section-subtitle mx-auto">Open to full-time Java Full Stack Developer roles —
+          reach out and let's talk.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h6>Email</h6>
+                <p><a href="mailto:boopathy.936057@gmail.com" style="color:inherit;">boopathy.936057@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h6>Phone</h6>
+                <p><a href="tel:+919360575878" style="color:inherit;">+91 93605 75878</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h6>Location</h6>
+                <p>Tamil Nadu, India</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <h6>GitHub</h6>
+                <p><a href="https://github.com/Boopathy008" target="_blank" rel="noopener" style="color:inherit;">github.com/Boopathy008</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <h6>LinkedIn</h6>
+                <p><a href="https://www.linkedin.com/in/mahendra-boopathy-e/" target="_blank" rel="noopener" style="color:inherit;">mahendra-boopathy-e</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <form
+  class="contact-card needs-validation"
+  id="contactForm"
+  action="https://api.web3forms.com/submit"
+  method="POST"
+  novalidate
+>
+  <!-- Web3Forms access key -->
+  <input
+    type="hidden"
+    name="access_key"
+    value="c35909b5-42aa-482e-958c-d69706fd1e5b"
+  >
+
+  <!-- Email subject shown in your inbox -->
+  <input
+    type="hidden"
+    name="subject"
+    value="New message from Mahendra Boopathy Portfolio"
+  >
+
+  <!-- Sender name shown in the email -->
+  <input
+    type="hidden"
+    name="from_name"
+    value="Mahendra Boopathy Portfolio"
+  >
+
+  <!-- Spam protection -->
+  <input
+    type="checkbox"
+    name="botcheck"
+    class="d-none"
+    style="display: none;"
+  >
+
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <label class="form-label-custom" for="name">Name</label>
+
+      <input
+        type="text"
+        class="form-control form-control-custom"
+        id="name"
+        name="name"
+        placeholder="Your full name"
+        required
+      >
+
+      <div class="invalid-feedback">
+        Please enter your name.
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label-custom" for="email">Email</label>
+
+      <input
+        type="email"
+        class="form-control form-control-custom"
+        id="email"
+        name="email"
+        placeholder="Your email"
+        required
+      >
+
+      <div class="invalid-feedback">
+        Please enter a valid email.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label-custom" for="subject">Subject</label>
+
+      <input
+        type="text"
+        class="form-control form-control-custom"
+        id="subject"
+        name="message_subject"
+        placeholder="What's this about?"
+        required
+      >
+
+      <div class="invalid-feedback">
+        Please enter a subject.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label-custom" for="message">Message</label>
+
+      <textarea
+        class="form-control form-control-custom"
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Write your message..."
+        required
+      ></textarea>
+
+      <div class="invalid-feedback">
+        Please enter a message.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button
+        type="submit"
+        class="btn-glow w-100 justify-content-center"
+        id="submitButton"
+      >
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Send Message</span>
+      </button>
+
+      <div id="form-status" role="status"></div>
+    </div>
+
+  </div>
+</form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="footer-brand">&lt;Mahendra Boopathy/&gt;</div>
+      <div class="footer-socials">
+        <a href="https://github.com/Boopathy008" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mahendra-boopathy-e/" target="_blank" rel="noopener" class="social-pill" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:boopathy.936057@gmail.com" class="social-pill" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://leetcode.com/u/Mahendra_Boopathy_08/" target="_blank" rel="noopener" class="social-pill" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+      </div>
+      <p class="footer-note">&copy; <span id="current-year"></span> Mahendra Boopathy. All rights reserved.</p>
+      <p class="footer-note">Made with HTML, CSS &amp; JavaScript <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <!-- ===================== Back to Top ===================== -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ===================== Scripts ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

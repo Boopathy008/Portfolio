@@ -1,0 +1,87 @@
+/* =============================================================
+   ANIMATION LAYER
+   ============================================================= */
+
+/* Floating ambient icons inside sections */
+.float-icon{
+  position: absolute;
+  color: var(--border);
+  font-size: 1.4rem;
+  animation: drift 9s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+@keyframes drift{
+  0%, 100%{ transform: translateY(0) rotate(0deg); }
+  50%{ transform: translateY(-22px) rotate(8deg); }
+}
+
+/* Glow pulse used on primary CTA in hero */
+@keyframes glow-pulse{
+  0%, 100%{ box-shadow: 0 8px 24px -8px var(--glow-primary); }
+  50%{ box-shadow: 0 8px 34px -4px var(--glow-accent); }
+}
+.hero-actions .btn-glow{ animation: glow-pulse 3.4s ease-in-out infinite; }
+
+/* Typing cursor blink (used as fallback / augment to Typed.js) */
+.typed-cursor{
+  animation: blink-cursor 1s infinite;
+  font-weight: 300;
+}
+@keyframes blink-cursor{ 50%{ opacity: 0; } }
+
+/* Card entrance handled by AOS; this adds a subtle shine sweep on hover */
+.card-surface{ position: relative; overflow: hidden; }
+.card-surface::after{
+  content: '';
+  position: absolute;
+  top: 0; left: -60%;
+  width: 40%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.06), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.9s ease;
+  pointer-events: none;
+}
+.card-surface:hover::after{ left: 130%; }
+
+/* Skill icon subtle bounce on hover */
+.tool-chip:hover i{
+  animation: bounce-sm 0.6s ease;
+}
+@keyframes bounce-sm{
+  0%, 100%{ transform: translateY(0); }
+  40%{ transform: translateY(-6px); }
+}
+
+/* Avatar badge pulse dot already handled inline via box-shadow; add keyframe pulse */
+@keyframes pulse-dot{
+  0%{ box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+  70%{ box-shadow: 0 0 0 8px rgba(34,197,94,0); }
+  100%{ box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+}
+.avatar-badge .dot{ animation: pulse-dot 2s infinite; }
+
+/* Parallax layers in hero (moved via JS transform on scroll) */
+.parallax-layer{ will-change: transform; }
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce){
+  *, *::before, *::after{
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Loading dots for preloader (alternative accent) */
+.loader-console .dots span{
+  animation: dot-fade 1.4s infinite;
+  opacity: 0.2;
+}
+.loader-console .dots span:nth-child(2){ animation-delay: 0.2s; }
+.loader-console .dots span:nth-child(3){ animation-delay: 0.4s; }
+@keyframes dot-fade{
+  0%, 100%{ opacity: 0.2; }
+  50%{ opacity: 1; }
+}
