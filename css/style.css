@@ -718,7 +718,7 @@ img{ max-width: 100%; display: block; }
 .edu-meta span{ display: block; color: var(--accent); font-family: var(--font-mono); font-size: 0.78rem; }
 
 /* ---------- Certificates ---------- */
-.cert-card{ padding: 1.8rem; text-align: center; }
+.cert-card{ padding: 1.8rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .cert-icon{
   width: 58px; height: 58px;
   margin: 0 auto 1.1rem;

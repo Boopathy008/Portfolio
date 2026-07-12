@@ -27,7 +27,8 @@
   .profile-card{ flex-wrap: wrap; text-align: center; justify-content: center; }
   .profile-arrow{ display: none; }
   .contact-card{ padding: 1.6rem; }
-  .experience-banner{ padding: 1.6rem; }
+  .experience-banner{ padding: 1.6rem; flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+  .cert-card{ padding: 1.2rem 0.8rem; }
   .avatar-initials{ font-size: 3.2rem; }
 }
 
