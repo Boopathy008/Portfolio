@@ -5,13 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ---------------- Preloader ---------------- */
-  var preloader = document.getElementById('preloader');
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      if (preloader) preloader.classList.add('hide');
-    }, 500);
-  });
+
 
   /* ---------------- AOS Init ---------------- */
   if (typeof AOS !== 'undefined') {
@@ -106,15 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.4 });
   skillBars.forEach(function (bar) { skillObserver.observe(bar); });
 
-  /* ---------------- Hero parallax blobs ---------------- */
-  var blobs = document.querySelectorAll('.parallax-layer');
-  window.addEventListener('scroll', function () {
-    var scrolled = window.scrollY;
-    blobs.forEach(function (blob, i) {
-      var speed = 0.15 + i * 0.08;
-      blob.style.transform = 'translateY(' + (scrolled * speed) + 'px)';
-    });
-  });
+
 
   /* ---------------- Contact form (static demo submission) ---------------- */
   const contactForm = document.getElementById("contactForm");
