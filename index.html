@@ -100,125 +100,62 @@
   <section class="section" id="about">
   <div class="container-xl section-inner">
 
-    <div class="row gy-5 align-items-start">
-
-      <!-- Left Side: Profile Image and Stats -->
-      <div class="col-lg-5 about-photo-col" data-aos="fade-right">
-
-        <div class="about-photo-frame">
-
-          <div class="about-image-wrapper">
-            <img
-              src="images/Boopathy.png"
-              alt="Mahendra Boopathy"
-              class="about-profile-image"
-            >
-          </div>
-
-          <div class="about-stats">
-
-            <div>
-              <span class="stat-num">4+</span>
-              <span class="stat-label">PROJECTS</span>
-            </div>
-
-            <div>
-              <span class="stat-num">7.81</span>
-              <span class="stat-label">CGPA</span>
-            </div>
-
-            <div>
-              <span class="stat-num">2026</span>
-              <span class="stat-label">GRAD YEAR</span>
-            </div>
-
-          </div>
-
-        </div>
-
+    <div class="bento-grid">
+      
+      <!-- Bio Card -->
+      <div class="bento-card bento-bio card-surface" data-aos="fade-up">
+        <h2 class="section-title" style="margin-bottom:1rem;">About <span class="text-gradient">Me</span></h2>
+        <p style="font-size:1.05rem; color:var(--text-secondary); line-height:1.8; margin:0;">
+          I am a Java Full Stack Developer focused on building secure, scalable and user-friendly web applications. 
+          My passion lies in bridging robust backend architecture with intuitive modern front-end technologies to create seamless digital experiences.
+        </p>
       </div>
 
-      <!-- Right Side: About Content -->
-      <div class="col-lg-7" data-aos="fade-left">
-
-        
-
-        <h2 class="section-title">
-          About <span class="text-gradient">Me</span>
-        </h2>
-
-        <p class="section-subtitle">
-          I am a Java Full Stack Developer focused on building secure,
-          scalable and user-friendly web applications using Java,
-          Spring Boot, MySQL and modern front-end technologies.
-        </p>
-
-        <div class="about-timeline">
-
-          <div class="timeline-item" data-aos="fade-up">
-            <span class="timeline-year">2022 — 2023</span>
-
-            <h4>Started My Computer Science Journey</h4>
-
-            <p>
-              Began learning programming fundamentals, Java, problem-solving
-              techniques and core computer science concepts.
-            </p>
-          </div>
-
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-            <span class="timeline-year">2023 — 2024</span>
-
-            <h4>Built Full Stack Fundamentals</h4>
-
-            <p>
-              Learned object-oriented programming, SQL, MySQL, HTML, CSS and
-              JavaScript, and started building responsive web applications.
-            </p>
-          </div>
-
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-            <span class="timeline-year">2024 — 2025</span>
-
-            <h4>Specialized in Java and Spring Boot</h4>
-
-            <p>
-              Developed backend applications using Spring Boot, Spring MVC,
-              REST APIs, JPA, Hibernate, Spring Security and MySQL.
-            </p>
-          </div>
-
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-            <span class="timeline-year">2025 — 2026</span>
-
-            <h4>Building AI-Integrated Applications</h4>
-
-            <p>
-              Currently developing full stack applications using Spring AI
-              and AI-powered features while preparing for a Java Full Stack
-              Developer role.
-            </p>
-          </div>
-
+      <!-- Stats Card -->
+      <div class="bento-card bento-stats card-surface" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-block">
+          <span class="stat-num text-gradient">4+</span>
+          <span class="stat-label">Projects</span>
         </div>
-
-        <div class="about-tags">
-          <span class="about-tag">Java</span>
-          <span class="about-tag">Spring Boot</span>
-          <span class="about-tag">Spring MVC</span>
-          <span class="about-tag">REST APIs</span>
-          <span class="about-tag">MySQL</span>
-          <span class="about-tag">JPA</span>
-          <span class="about-tag">Hibernate</span>
-          <span class="about-tag">Spring Security</span>
-          <span class="about-tag">Spring AI</span>
-          <span class="about-tag">HTML</span>
-          <span class="about-tag">CSS</span>
-          <span class="about-tag">JavaScript</span>
-          <span class="about-tag">Git</span>
-          <span class="about-tag">Problem Solving</span>
+        <div class="stat-block">
+          <span class="stat-num text-gradient">7.81</span>
+          <span class="stat-label">CGPA</span>
         </div>
+        <div class="stat-block">
+          <span class="stat-num text-gradient">2026</span>
+          <span class="stat-label">Grad Year</span>
+        </div>
+      </div>
 
+      <!-- Tech Stack Card -->
+      <div class="bento-card bento-tags card-surface" data-aos="fade-up" data-aos-delay="200">
+        <h4 style="font-size:1.1rem; margin-bottom:1.2rem; font-family:var(--font-mono);">Core Technologies</h4>
+        <div class="about-tags-clean">
+          <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>REST APIs</span><span>MySQL</span><span>Hibernate</span><span>Spring Security</span><span>Spring AI</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Timeline Card -->
+      <div class="bento-card bento-timeline card-surface" data-aos="fade-up" data-aos-delay="300">
+        <h4 style="font-size:1.1rem; margin-bottom:1.5rem; font-family:var(--font-mono);">My Journey</h4>
+        <div class="timeline-clean">
+          <div class="tl-item">
+            <span class="tl-year">2022</span>
+            <p>Started Computer Science journey & programming fundamentals.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-year">2023</span>
+            <p>Mastered core Java, SQL, and built full stack fundamentals.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-year">2024</span>
+            <p>Specialized in Spring Boot, REST APIs, and modern backend architecture.</p>
+          </div>
+          <div class="tl-item border-0 pb-0">
+            <span class="tl-year">2025</span>
+            <p>Developing AI-integrated applications with Spring AI.</p>
+          </div>
+        </div>
       </div>
 
     </div>
