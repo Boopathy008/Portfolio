@@ -22,6 +22,7 @@
   .section-subtitle{ margin-bottom: 2.2rem; }
   .bento-grid{ grid-template-columns: 1fr; }
   .bento-bio, .bento-stats, .bento-tags, .bento-timeline { grid-column: 1; grid-row: auto; }
+  .skills-clean-grid{ grid-template-columns: 1fr; }
   .edu-card{ flex-direction: column; text-align: center; }
   .edu-icon{ margin: 0 auto; }
   .edu-meta{ justify-content: center; }

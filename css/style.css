@@ -485,54 +485,58 @@ img{ max-width: 100%; display: block; }
 }
 
 /* ---------- Skills ---------- */
-.skill-group-title{
+.skills-clean-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.skill-category {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.8rem;
+  transition: var(--transition);
+}
+.skill-category:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+.skill-cat-label {
   font-family: var(--font-mono);
-  color: var(--accent);
-  font-size: 0.85rem;
-  margin-bottom: 1.4rem;
-  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.82rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
-.skill-group-title i{ font-size: 1rem; }
-.skill-card{ padding: 2rem; height: 100%; }
-.skill-item{ margin-bottom: 1.3rem; }
-.skill-item:last-child{ margin-bottom: 0; }
-.skill-item-head{
-  display: flex; justify-content: space-between;
-  font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--text);
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
-.skill-item-head span.pct{ font-family: var(--font-mono); color: var(--accent); }
-.skill-bar-track{
-  height: 7px;
-  border-radius: 10px;
-  background: rgba(203,213,225,0.1);
-  overflow: hidden;
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: var(--transition);
 }
-.skill-bar-fill{
-  height: 100%;
-  border-radius: 10px;
-  width: 0%;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+.skill-pill i {
+  color: var(--primary);
+  font-size: 0.9rem;
 }
-.tools-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 110px);
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
+.skill-pill:hover {
+  border-color: var(--primary);
+  color: var(--text);
+  background: rgba(16, 185, 129, 0.06);
 }
-.tool-chip{
-  padding: 1.1rem 0.6rem;
-  text-align: center;
-  border-radius: var(--radius-sm);
-}
-.tool-chip i{
-  font-size: 1.6rem;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
-  display: block;
-}
-.tool-chip span{ font-size: 0.82rem; color: var(--text-secondary); }
 
 /* ---------- Projects ---------- */
 .project-card{ overflow: hidden; height: 100%; display: flex; flex-direction: column; }
